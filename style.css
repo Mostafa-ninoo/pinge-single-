@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+    font-size: 1.25rem;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    max-width: 18.75rem;
+    height: 35.65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-icon {
+    width: 3rem;
+    height: 1rem;
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: hsl(0, 0%, 59%);
+}
+
+h1 span {
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: .7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email-input {
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    height: 2rem;
+    border-style: solid;
+    border-color: hsl(223, 100%, 88%);
+    border-width: 1px;
+    padding-left: 2rem;
+    width: 16rem;
+    font-size: .8rem;
+}
+
+#email-input::placeholder {
+    font-size: medium;
+}
+
+#email-input:focus {
+    outline-color: hsl(223, 100%, 88%);
+}
+
+#error {
+    font-size: .6rem;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    margin-top: .2rem;
+    margin-left: 1rem;
+    display: none;
+    margin-bottom: .5rem;
+}
+
+#submit-button {
+    width: 16rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    margin-top: 1rem;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+#submit-button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+#main-icon {
+    width: 17rem;
+    height: 11rem;
+    margin-top: 2rem;
+}
+
+#icons {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+#facebook {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 1rem;
+    padding-left: .6rem;
+    padding-top: .2rem;
+    width: 2rem;
+    height: 2rem;
+    transform: scale(0.8);
+}
+
+#facebook:hover {
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+
+#twitter {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 1rem;
+    padding-left: .4rem;
+    padding-top: .2rem;
+    width: 2rem;
+    height: 2rem;
+    transform: scale(0.8);
+
+}
+
+#twitter:hover {
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+
+#instagram {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 1rem;
+    padding-left: .4rem;
+    padding-top: .2rem;
+    width: 2rem;
+    height: 2rem;
+    transform: scale(0.8);
+}
+
+#instagram:hover {
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+
+#copyRight {
+    font-size: .5rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 23.4375em) {
+    main {
+        max-width: 72em;
+        justify-content: center;
+    }
+
+    #logo-icon {
+        width: 3em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    form {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #email-input {
+        margin-top: 1.5em;
+        height: 3em;
+        border-radius: 2em;
+    }
+
+    #error {
+        margin-top: .2rem;
+        margin-left: 2em;
+    }
+
+    #submit-button {
+        width: 10em;
+        height: 3.5em;
+        border-radius: 2em;
+        margin-top: 1rem;
+        font-size: .7rem;
+        font-weight: 600;
+    }
+
+    #main-icon {
+        width: 19em;
+        height: 11em;
+        margin-top: 1em;
+    }
+}
